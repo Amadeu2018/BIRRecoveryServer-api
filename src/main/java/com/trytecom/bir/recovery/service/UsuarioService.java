@@ -1,7 +1,6 @@
 package com.trytecom.bir.recovery.service;
 
-import com.trytecom.bir.recovery.dtos.FicheiroGlAccountDTO;
-import com.trytecom.bir.recovery.entidade.FicheiroGlAccount;
+
 import com.trytecom.bir.recovery.exception.UsuarioCadastradoException;
 import com.trytecom.bir.recovery.entidade.Usuario;
 import com.trytecom.bir.recovery.repositorio.UsuarioRepository;

@@ -2,7 +2,6 @@ package com.trytecom.bir.recovery.controller;
 
 import com.trytecom.bir.recovery.entidade.Usuario;
 import com.trytecom.bir.recovery.exception.UsuarioCadastradoException;
-import com.trytecom.bir.recovery.repositorio.UsuarioRepository;
 import com.trytecom.bir.recovery.service.UsuarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/usuario")

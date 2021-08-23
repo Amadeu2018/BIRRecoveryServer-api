@@ -6,6 +6,8 @@ import com.trytecom.bir.recovery.repositorio.FicheiroGlAccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+
 
 @Service
 public class DBService {
@@ -19,17 +21,9 @@ public class DBService {
 	private FicheiroEaeRepository ficheiroEaeRepository;
 
     public void instanciaBaseDeDados() {
-            /*FicheiroGlAccount glAccount = new FicheiroGlAccount(null, "Informática", "Livros de TI");
-            Categoria cat2 = new Categoria(null, "Informática", "Livros de TI");
+            FicheiroGlAccount glAccount = new FicheiroGlAccount(null, "1", "?", "125", "AKZ", "Pagamentos Blc - Conta Transitória", "3210MCXP");
 
-    		Livro l1 = new Livro(null, "Clean code", "Robert Martin", "Lorem ipsum", cat1);
-            Livro l2 = new Livro(null, "Clean code", "Robert Martin", "Lorem ipsum", cat2);
-
-    		cat1.getLivros().addAll(Arrays.asList(l1));
-    		cat2.getLivros().addAll(Arrays.asList(l2));
-
-    		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
-    		this.livroRepository.saveAll(Arrays.asList(l1, l2));*/
+    		this.ficheiroGlAccountRepository.saveAll(Arrays.asList(glAccount));
     }
 
 }
